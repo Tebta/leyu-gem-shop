@@ -20,7 +20,7 @@ export function Header() {
           {/* Logo */}
           <img onClick={()=> router.push('/')} className='w-16 cursor-pointer' src='/logo.jpg'/>
           {/* <Link href="/" className="text-2xl font-bold text-[#8B612E]">
-            Elegance
+            Liyu
           </Link> */}
 
           {/* Desktop Navigation */}

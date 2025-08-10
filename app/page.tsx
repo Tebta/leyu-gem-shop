@@ -91,7 +91,7 @@ export default function HomePage() {
         <div className="relative z-20 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
             Timeless
-            <span className="block text-[#8B612E]">Elegance</span>
+            <span className="block text-[#8B612E]">Liyu</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
             Discover our exquisite collection of handcrafted jewelry, where every piece tells a story of luxury and

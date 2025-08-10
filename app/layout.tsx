@@ -9,7 +9,7 @@ import { FavoritesProvider } from "@/components/favorites-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Elegance Jewelry - Timeless Luxury",
+  title: "Liyu Jewelry - Timeless Luxury",
   description: "Discover our exquisite collection of handcrafted jewelry",
 
 }

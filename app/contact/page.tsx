@@ -126,7 +126,7 @@ export default function ContactPage() {
                   <Mail className="h-6 w-6 text-[#8B612E] mt-1" />
                   <div>
                     <h3 className="font-semibold">Email Us</h3>
-                    <p className="text-gray-600">info@elegancejewelry.com</p>
+                    <p className="text-gray-600">info@Liyujewelry.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -145,7 +145,7 @@ export default function ContactPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Why Choose Elegance?</CardTitle>
+                <CardTitle>Why Choose Liyu?</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-gray-600">

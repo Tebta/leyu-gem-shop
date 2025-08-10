@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-[#8B612E] mb-4">Elegance</h3>
+            <h3 className="text-2xl font-bold text-[#8B612E] mb-4">Liyu</h3>
             <p className="text-gray-300 mb-4">
               Crafting timeless jewelry pieces that celebrate life's most precious moments.
             </p>
@@ -122,7 +122,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Elegance Jewelry. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Liyu Jewelry. All rights reserved.</p>
         </div>
       </div>
     </footer>
