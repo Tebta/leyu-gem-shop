@@ -278,9 +278,9 @@ export default function ProductsPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="text-xl font-bold text-[#8B612E]">${product.price}</span>
+                      <span className="text-xl font-bold text-[#8B612E]">ETB {product.price}</span>
                       {product.originalPrice && (
-                        <span className="text-sm text-gray-500 line-through ml-2">${product.originalPrice}</span>
+                        <span className="text-sm text-gray-500 line-through ml-2">ETB {product.originalPrice}</span>
                       )}
                     </div>
                     <Link href={`/products/${product.id}`}>
