@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Heart, Star, ShoppingBag, Share2, Truck, Shield, RotateCcw } from "lucide-react"
 import { useFavorites } from "@/components/favorites-provider"
 
+
 const products = [
   {
     id: 1,
@@ -16,11 +17,11 @@ const products = [
     price: 2499,
     originalPrice: 2999,
     images: [
-      "/placeholder.svg?height=500&width=500",
-      "/placeholder.svg?height=500&width=500",
-      "/placeholder.svg?height=500&width=500",
+      "/neck1.jpg",
+      "/neck3.jpg",
+      "/neck2.jpg",
     ],
-    video: "/placeholder.mp4?query=diamond ring video",
+    video: "/placeholder",
     category: "rings",
     rating: 4.9,
     reviews: 124,
@@ -72,12 +73,18 @@ export default function ProductDetailPage() {
       <div className="grid lg:grid-cols-2 gap-12">
         {/* Product Images */}
         <div className="space-y-4">
-          <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100">
+          <div className="relative ratio-square overflow-hidden rounded-lg bg-gray-100">
             {selectedImage === 0 && product.video ? (
-              <video className="w-full h-full object-cover" controls autoPlay muted loop>
-                <source src={product.video} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+            <video muted controls  style={{
+              width: '100%',
+              maxWidth: '600px',
+              height: '380px',
+              objectFit: 'contain',
+              backgroundColor: 'black'
+            }}>
+            <source src="/IMG_9958.MOV" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
             ) : (
               <Image
                 src={product.images[selectedImage] || "/placeholder.svg"}
@@ -134,10 +141,10 @@ export default function ProductDetailPage() {
               <span className="text-sm text-gray-600 ml-2">({product.reviews} reviews)</span>
             </div>
             <div className="flex items-center gap-4 mb-4">
-              <span className="text-3xl font-bold text-[#8B612E]">${product.price}</span>
+              <span className="text-3xl font-bold text-[#8B612E]">ETB {product.price}</span>
               {product.originalPrice && (
                 <>
-                  <span className="text-xl text-gray-500 line-through">${product.originalPrice}</span>
+                  <span className="text-xl text-gray-500 line-through">ETB {product.originalPrice}</span>
                   <Badge className="bg-red-500">
                     {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}% OFF
                   </Badge>

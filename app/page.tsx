@@ -41,12 +41,12 @@ const featuredProducts = [
 ]
 
 const categories = [
-  { name: "Necklaces", image: "/placeholder.svg?height=200&width=200", href: "/products?category=necklaces" },
-  { name: "Rings", image: "/placeholder.svg?height=200&width=200", href: "/products?category=rings" },
-  { name: "Earrings", image: "/placeholder.svg?height=200&width=200", href: "/products?category=earrings" },
-  { name: "Bracelets", image: "/placeholder.svg?height=200&width=200", href: "/products?category=bracelets" },
-  { name: "Watches", image: "/placeholder.svg?height=200&width=200", href: "/products?category=watches" },
-  { name: "Custom", image: "/placeholder.svg?height=200&width=200", href: "/custom-orders" },
+  { name: "Necklaces", image: "/neck1.jpg", href: "/products?category=necklaces" },
+  { name: "Rings", image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?q=100&w=2580&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", href: "/products?category=rings" },
+  { name: "Earrings", image: "https://plus.unsplash.com/premium_photo-1681276170291-27698ccc0a8e?q=100&w=1387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", href: "/products?category=earrings" },
+  { name: "Bracelets", image: "https://images.unsplash.com/photo-1646031348619-13cb7d714c87?q=100&w=2870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", href: "/products?category=bracelets" },
+  // { name: "Watches", image: "/neck.jpg", href: "/products?category=watches" },
+  { name: "Custom", image: "/neck.jpg", href: "/custom-orders" },
 ]
 
 export default function HomePage() {
@@ -82,7 +82,7 @@ export default function HomePage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 z-10" />
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/neck.jpg"
           alt="Luxury Jewelry"
           fill
           className="object-cover"
@@ -145,16 +145,16 @@ export default function HomePage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">Shop by Category</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {categories.map((category) => (
               <Link key={category.name} href={category.href} className="group">
-                <div className="relative overflow-hidden rounded-lg bg-white shadow-lg hover:shadow-xl transition-shadow">
+                <div className="relative overflow-hidden rounded-lg  transition-shadow">
                   <Image
                     src={category.image || "/placeholder.svg"}
                     alt={category.name}
                     width={200}
                     height={200}
-                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full rounded-full h-56 object-cover  group-hover:scale-103 transition-transform duration-300"
                   />
                   <div className="p-4 text-center">
                     <h3 className="font-semibold text-gray-900">{category.name}</h3>

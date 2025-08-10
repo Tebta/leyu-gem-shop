@@ -19,7 +19,7 @@ const products = [
     name: "Diamond Eternity Ring",
     price: 2499,
     originalPrice: 2999,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck.jpg",
     category: "rings",
     rating: 4.9,
     reviews: 124,
@@ -30,7 +30,7 @@ const products = [
     name: "Pearl Necklace Set",
     price: 899,
     originalPrice: 1199,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck1.jpg",
     category: "necklaces",
     rating: 4.8,
     reviews: 89,
@@ -41,7 +41,7 @@ const products = [
     name: "Gold Drop Earrings",
     price: 649,
     originalPrice: 799,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck3.jpg",
     category: "earrings",
     rating: 4.7,
     reviews: 156,
@@ -51,7 +51,7 @@ const products = [
     id: 4,
     name: "Silver Tennis Bracelet",
     price: 1299,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck2.jpg",
     category: "bracelets",
     rating: 4.6,
     reviews: 78,
@@ -62,7 +62,7 @@ const products = [
     name: "Luxury Watch",
     price: 3999,
     originalPrice: 4999,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck.jpg",
     category: "watches",
     rating: 4.9,
     reviews: 203,
@@ -72,7 +72,7 @@ const products = [
     id: 6,
     name: "Sapphire Pendant",
     price: 1899,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck1.jpg",
     category: "necklaces",
     rating: 4.8,
     reviews: 92,
@@ -224,8 +224,8 @@ export default function ProductsPage() {
                 className="w-full"
               />
               <div className="flex justify-between text-sm text-gray-600">
-                <span>${priceRange[0]}</span>
-                <span>${priceRange[1]}</span>
+                <span>ETB{priceRange[0]}</span>
+                <span>ETB{priceRange[1]}</span>
               </div>
             </div>
           </div>
