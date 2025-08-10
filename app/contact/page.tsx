@@ -107,11 +107,11 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold">Visit Our Store</h3>
                     <p className="text-gray-600">
-                      123 Jewelry Lane
+                      Liyu Gem & Jewelry
                       <br />
                       Diamond District
                       <br />
-                      New York, NY 10001
+                      Ethiopia, Addis Ababa
                     </p>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-[#8B612E] mt-1" />
                   <div>
                     <h3 className="font-semibold">Call Us</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600">+251 968349202</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

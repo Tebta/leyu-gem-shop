@@ -13,7 +13,7 @@ const featuredProducts = [
     name: "Diamond Eternity Ring",
     price: 2499,
     originalPrice: 2999,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck.jpg",
     category: "rings",
     rating: 4.9,
     reviews: 124,
@@ -23,7 +23,7 @@ const featuredProducts = [
     name: "Pearl Necklace Set",
     price: 899,
     originalPrice: 1199,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck3.jpg",
     category: "necklaces",
     rating: 4.8,
     reviews: 89,
@@ -33,7 +33,7 @@ const featuredProducts = [
     name: "Gold Drop Earrings",
     price: 649,
     originalPrice: 799,
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/neck1.jpg",
     category: "earrings",
     rating: 4.7,
     reviews: 156,
@@ -206,8 +206,8 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <div>
-                      <span className="text-2xl font-bold text-[#8B612E]">${product.price}</span>
-                      <span className="text-lg text-gray-500 line-through ml-2">${product.originalPrice}</span>
+                      <span className="text-2xl font-bold text-[#8B612E]">ETB {product.price}</span>
+                      <span className="text-lg text-gray-500 line-through ml-2">ETB {product.originalPrice}</span>
                     </div>
                     <Link href={`/products/${product.id}`}>
                       <Button className="bg-[#8B612E] hover:bg-[#8B612E]/90">View Details</Button>
@@ -254,11 +254,11 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/neck2.jpg"
                 alt="Jewelry Craftsman"
                 width={600}
-                height={500}
-                className="rounded-lg"
+                height={300}
+                className="rounded-lg h-96 object-cover"
               />
             </div>
           </div>

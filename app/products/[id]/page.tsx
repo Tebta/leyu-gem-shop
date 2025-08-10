@@ -13,7 +13,7 @@ import { useFavorites } from "@/components/favorites-provider"
 const products = [
   {
     id: 1,
-    name: "Diamond Eternity Ring",
+    name: "Black Opal",
     price: 2499,
     originalPrice: 2999,
     images: [
@@ -27,7 +27,7 @@ const products = [
     reviews: 124,
     material: "18K White Gold",
     description:
-      "This stunning diamond eternity ring features brilliant-cut diamonds set in 18K white gold. Perfect for engagements, anniversaries, or as a symbol of eternal love.",
+      "bold, fiery, and unforgettable. Set in 925 sterling silver and electroplated with 24k gold, this necklace is pure statement.",
     features: [
       "18K White Gold Band",
       "1.5 Carat Total Diamond Weight",
@@ -82,7 +82,7 @@ export default function ProductDetailPage() {
               objectFit: 'contain',
               backgroundColor: 'black'
             }}>
-            <source src="/IMG_9958.MOV" type="video/mp4" />
+            <source src="/IMG_4781.MP4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
             ) : (
